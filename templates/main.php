@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<title>PHP-Proxy</title>
+<title><?= strtoupper($_SERVER['HTTP_HOST']) ?></title>
 
 <meta name="generator" content="php-proxy.com">
 <meta name="version" content="<?=$version;?>">
@@ -80,7 +80,7 @@ a {
 <div class="container">
 
 	<div style="text-align:center;">
-		<h1>PHP-Proxy</h1>
+		<h1><?= strtoupper($_SERVER['HTTP_HOST']) ?></h1>
 	</div>
 	
 	<?php if(isset($error_msg)){ ?>
@@ -110,9 +110,9 @@ a {
 	
 </div>
 
-<div class="footer">
+<?php /* <div class="footer">
 	Powered by <a href="//www.php-proxy.com/" target="_blank">PHP-Proxy</a> <?php echo $version; ?>
-</div>
+</div>*/ ?>
 
 
 </body>
